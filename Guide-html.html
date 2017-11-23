@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-引导页</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/Guide-html.css">
+</head>
+<body class="clear">
+<div class="all-img">
+    <a href="Detailed.html"><img src="" class="guide-img"></a>
+    <a href="HomePage.html"><div class="time-out"><span>3S</span></div></a>
+</div>
+
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+    $(function () {
+        $("body").bind("touchmove",function(event){event.preventDefault();});
+        var n1=Math.floor(Math.random()*10+1);
+        if(n1<=3){
+            $('.guide-img').attr('src',"img/guide-img/1@1x.png")
+        }
+        else if(n1>3&&n1<=7){
+            $('.guide-img').attr('src',"img/guide-img/2@1x.png")
+        }
+        else if(n1>7){
+            $('.guide-img').attr('src',"img/guide-img/3@1x.png")
+        }
+        console.log(n1)
+
+
+        var timer=setInterval(countdown,1000)
+        var i=parseInt($('.time-out span').html())
+        function countdown() {
+            i--;
+            $('.time-out span').html(i+'S')
+            if(i==0){
+                clearInterval(timer)
+//                $('.time-out span').html(3+'S')
+                window.location.href='HomePage.html'
+            }
+        }
+
+    })
+</script>
+</html>

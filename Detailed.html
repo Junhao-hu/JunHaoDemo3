@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-详情页</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/Detailed.css">
+</head>
+<body>
+<div class="swiper-container banner-box">
+    <div class="top-box">
+        <a href="javascript:;" class="back-link back-img  f-left"><img src="img/detailed/arrow.png" class="f-left"></a>
+        <div href="#" class="plus-img f-right"><img src="img/detailed/plus.png" class="f-right"></div>
+        <div class="more-box-click">
+            <a href="like.html"></a>
+        </div>
+    </div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/detailed/1@1x.png" alt="banner1.png"></div>
+        <div class="swiper-slide"><img src="img/detailed/2@1x.png" alt="banner2.png"></div>
+        <div class="swiper-slide"><img src="img/detailed/3@1x.png" alt="banner3.png"></div>
+        <div class="swiper-slide"><img src="img/detailed/4@1x.png" alt="banner4.png"></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    <div class="img-name-box"><img src="img/detailed/name.png"></div>
+</div>
+<img src="img/detailed/youhui.png" class="save f-right">
+<div class="content-box f-left">
+    <img src="img/detailed/content.png">
+</div>
+
+<div class="bot-nav"  style="font-size:0">
+    <a href="user-help.html" class="kefu"><img src="img/Customized/4/kefu.png" class="f-left"></a>
+    <a href="#" class="shopping"><img src="img/Customized/4/shopping.png" class="f-left"></a>
+    <a href="#" class="to-pay f-right"><img src="img/Customized/4/settlement@1x.png"></a>
+    <a href="buy.html" class="to-pay f-right"><img src="img/Customized/4/addtobag@1x.png"></a>
+</div>
+
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay : 2000,
+
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+        })
+        setInterval("mySwiper", 4000);
+
+        $(function () {
+            $('.plus-img').click(function () {
+                $('.more-box-click').toggle()
+            })
+            $('.back-link').click(function () {
+                window. history.back()
+            })
+        })
+</script>
+</html>

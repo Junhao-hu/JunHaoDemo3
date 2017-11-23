@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-收藏</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/like.css">
+</head>
+<body>
+<div class="top-box">
+    <p>收藏</p>
+    <a href="HomePage.html" class="clear"><img src="img/Customized/1/arrow.png" alt="arrow" class="f-left"></a>
+</div>
+<div class="look-box">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="Detailed.html" class="like-1"><img src="img/like-img/1@1x.png"></a></div>
+            <div class="del swiper-slide"><img src="img/like-img/delete.png"></div>
+        </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="Detailed.html" class="like-1"><img src="img/like-img/2@1x.png"></a></div>
+            <div class="del swiper-slide"><img src="img/like-img/delete.png"></div>
+        </div>
+    </div>
+</div>
+
+<div class="no-look">
+    <div class="txt-img-box">
+        <img src="img/like-img/txt.png">
+    </div>
+    <div class="found-like">
+        <img src="img/like-img/icon@1x.png">
+        <a href="HomePage.html" class="found-a"></a>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        initialSlide :0,
+        followFinger:false,
+    });
+    $(".del").click(function(){
+        $(this).parent().parent().remove();
+        if($('.look-box').html()==false){
+            $('.no-look').css('display','block')
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-启动页</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/star-html.css">
+</head>
+<body class="clear">
+<img src="img/star-html.png">
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+    $(function () {
+//        console.log(('#user-name')!=null)
+        $("body").bind("touchmove",function(event){event.preventDefault();});
+        var timer=setInterval(linkjump,1000)
+        var i=3;
+        function linkjump() {
+            i--;
+            if(i==0){
+                clearInterval(timer)
+                i=3;
+                window.location.href=''
+                if (localStorage.pagecount)
+                {
+                    localStorage.pagecount=Number(localStorage.pagecount) +1;
+                }
+                else
+                {
+                    localStorage.pagecount=1;
+                }
+//                if(localStorage.pagecount==1){
+//                    window.location.href='login-1.html'
+//                }else if(localStorage.pagecount>1){
+//                    window.location.href='Guide-html.html'
+//                }
+
+                if(localStorage.getItem('#user-name')==null){
+                    window.location.href='Guide-html.html'
+                }else{
+                    window.location.href='login-1.html'
+                }
+            }
+        }
+    })
+</script>
+</html>

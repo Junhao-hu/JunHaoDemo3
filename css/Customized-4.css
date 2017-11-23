@@ -1,0 +1,196 @@
+body{
+    background: url("../img/Customized/4/background@1x.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 13.2rem;
+}
+/*顶部部分*/
+.top-box{
+    padding-top: 0.3rem;
+    position: relative;
+    margin-bottom: 0.3rem;
+}
+.top-box a{
+    display: inline-block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    left:1.3rem;
+}
+.top-box p{
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+.top-box a img{
+    height: 0.36rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+.more1-img{
+    position: absolute;
+    width: 0.48rem;
+    height: 0.48rem;
+    top: 0.26rem;
+    right: 0.48rem;
+}
+.more1-img img{
+    width: 0.36rem;
+    height: 0.36rem;
+    margin-top: 0.06rem;
+    margin-right: 0.06rem;
+}
+.more-box-click{
+    position: absolute;
+    width: 1.9rem;
+    height: 2.6rem;
+    background: url("../img/Customized/4/more2@1x.png")no-repeat;
+    background-size: 100% 100%;
+    z-index: 9;
+    right: 0.6rem;
+    display: none;
+}
+.more-box-click a{
+    display: inline-block;
+    width: 1.5rem;
+    height: 0.8rem;
+    position: absolute;
+    top:0.16rem;
+    left: 0.24rem;
+}
+/*顶部部分结束*/
+
+/*中间部分*/
+.center-box{
+    width: 6.15rem;
+    height: 8.6rem;
+    background: url("../img/Customized/4/rectangle@1x.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.pel-img{
+    width: 1.3rem;
+    height: 4.09rem;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+}
+.pel-txt-box{
+    height: 1.64rem;
+    margin-top: 1.9rem;
+    margin-left: 0.45rem;
+}
+.pel-til{
+    font-size: 0.24rem;
+    margin: 0 0 0.22rem 0;
+}
+.line{
+    border-bottom: solid 1px #333;
+    width: 1.24rem;
+    margin-bottom: 0.33rem;
+}
+.pel-txt{
+    font-size:0.24rem;
+   margin: 0;
+    color: #333;
+}
+.pel-mess{
+    width: 4.62rem;
+    height: 2.02rem;
+    margin-left: 0.9rem;
+    margin-top: 0.45rem;
+}
+.pel-mess img{
+    width: 100%;
+    height: 100%;
+}
+.pay-box{
+    font-size: 0.36rem;
+    margin-top: 0.24rem;
+    margin-right: 0.7rem;
+}
+.pay-box span{
+    color: #a31515;
+    font-size: 0.4rem;
+}
+.que{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0.2rem;
+}
+.que img{
+    width: 100%;
+    height: 100%;
+}
+/*中间部分结束*/
+
+/*底部部分*/
+.bottom-box{
+    margin-top: 1.1rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.9rem;
+}
+.pay-first{
+    font-size: 0.5rem;
+    color: #333;
+}
+.pay-first span{
+    font-size: 0.52rem;
+    font-weight: bold;
+    color: #a31515;
+}
+.pay-need{
+    font-size: 0.24rem;
+    color: #666;
+    margin-right: 0;
+}
+/*底部部分结束*/
+
+/*底部导航栏*/
+.bot-nav{
+    width: 100%;
+    height: 0.98rem;
+    border-top: solid 1px #d4cec6;
+    position: fixed;
+    bottom: 0;
+    background: #fcf5eb;
+}
+.bot-nav a{
+    display: inline-block;
+}
+.kefu{
+    width: 1rem;
+    height: 100%;
+    margin-left: 0.45rem;
+    margin-right: 0.25rem;
+}
+.kefu img{
+    width: 0.64rem;
+    height: 0.75rem;
+    margin-top: 0.18rem;
+    margin-left: 0.12rem;
+}
+.shopping{
+    width: 1rem;
+    height: 100%;
+}
+.shopping img{
+    width: 0.64rem;
+    height: 0.75rem;
+    margin-top: 0.18rem;
+    margin-left: 0.12rem;
+}
+.to-pay{
+    width: 2.15rem;
+    height: 100%;
+}
+.to-pay img{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-定制-选择</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/Custonmized-3.css">
+</head>
+<body>
+<!--顶部部分-->
+<div class="top-box">
+    <p>选料定款</p>
+    <a href="Customized-2.html" class="clear"><img src="img/Customized/1/arrow.png" alt="arrow" class="f-left"></a>
+</div>
+<!--顶部部分结束-->
+
+<!--主体部分开始-->
+
+<!--选料定款部分-->
+<div class="like-solid">
+    <div class="like-til">选料定款</div>
+</div>
+
+
+<div class="choise-box clear">
+    <div class="choise-0 f-left cho-active">
+        <a href="javascript:;" class="cho-a-1 f-left clear"><img src="img/Customized/3/1@2x.png" class="f-left"></a>
+    </div>
+    <div class="choise-0 choise-2 f-left clear">
+        <a href="javascript:;" class="cho-a-2 f-left clear"><img src="img/Customized/3/2@1x.png" class="f-left"></a>
+    </div>
+    <div class="choise-0 f-right clear">
+        <a href="javascript:;" class="cho-a-2 f-left clear"><img src="img/Customized/3/3@1x.png" class="f-left"></a>
+    </div>
+    <!--选择项部分-->
+    <div class="cho-mess-box clear" style="overflow-y: auto" >
+        <div class="mess-box clear">
+            <p class="cho-mess-til">面料</p>
+            <span class="span-1 f-left">真丝</span>
+            <span class="span-2 f-left">桑波缎</span>
+            <span class="span-3 f-right">素绉缎</span>
+            <span class="span-1 f-left">杭罗</span>
+            <span class="span-2 f-left">双宫绸</span>
+            <span class="span-3 f-right">古香缎</span>
+            <span class="span-1 f-left">丝绒</span>
+            <span class="span-2 f-left span-active">香云纱</span>
+            <span class="span-3 f-right">织锦缎</span>
+            <span class="span-1 f-left">棉麻</span>
+            <span class="span-2 f-left">桑蚕丝</span>
+            <span class="span-3 f-right">柞蚕丝</span>
+        </div>
+        <div class="dashed"></div>
+        <p class="cho-mess-til2">色系</p>
+        <div class="chose-color" style="font-size: 0;">
+            <p class="color-til">红色系</p>
+            <p class="color-txt clear">
+                <a href="#" class="f-left"><span>勃垦第酒红 </span><img src="img/Customized/3/res1@1x.png"></a>
+                <a href="#" class="f-right"><span>锈红  </span><img src="img/Customized/3/red2@1x.png"></a>
+            </p>
+            <p class="color-txt clear">
+                <a href="#" class="f-left"><span>勃垦第酒红 </span> <img src="img/Customized/3/res1@1x.png"></a>
+                <a href="#" class="f-right"><span>锈红  </span><img src="img/Customized/3/red2@1x.png"></a>
+            </p>
+            <p class="color-txt clear">
+                <a href="#" class="f-left"><span>勃垦第酒红 </span> <img src="img/Customized/3/res1@1x.png"></a>
+                <a href="#" class="f-right"><span>锈红  </span><img src="img/Customized/3/red2@1x.png"></a>
+            </p>
+            <p class="color-txt clear">
+                <a href="#" class="f-left"><span>勃垦第酒红 </span> <img src="img/Customized/3/res1@1x.png"></a>
+                <a href="#" class="f-right"><span>锈红  </span><img src="img/Customized/3/red2@1x.png"></a>
+            </p>
+        </div>
+    </div>
+    <!--选择项部分结束-->
+    <div class="look-box">
+        <div class="like-solid">
+            <div class="like-til">效果预览</div>
+        </div>
+        <a href="#" class="que-img"><img src="img/Customized/3/question@1x.png"  class="f-left"></a>
+        <div class="look-img">
+            <img src="img/Customized/3/cloth@1x.png" class="pel-img">
+            <img src="img/Customized/3/rotate@1x.png" class="d-img">
+        </div>
+        <p class="look-p-box">
+            长款月牙袖 <br>
+            香云纱群芳紫桔梗苏绣 <br>
+            中式复古连襟旗袍
+        </p>
+    </div>
+    <!--效果预览部分-->
+
+    <!--想过预览部分结束-->
+</div>
+<!--选料定款部分结束-->
+
+<!--主体部分结束-->
+
+<!--底部部分-->
+<div class="bottom-box">
+    <a href="Customized-4.html"><img src="img/Customized/3/confirm@1x.png" alt="custom"></a>
+</div>
+<!--底部部分结束-->
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+    $(function () {
+        for(var j=0;j<$('.choise-0 a').length;j++){
+            $('.choise-0 a')[j].num=j;
+        }
+        $('.choise-0 a').click(function () {
+            var imgsrc=$('.choise-0 a img').attr('src')
+            $('.choise-0 a').removeClass('cho-a-1')
+            $('.choise-0 a').addClass('cho-a-2')
+            $(this).removeClass('cho-a-2')
+            $(this).addClass('cho-a-1')
+            $('.choise-0').removeClass('cho-active')
+
+            for(var i=0;i<=2;i++){
+                $('.choise-0 a img:eq('+i+')').attr('src','img/Customized/3/'+(i+1)+'@1x.png')
+            }
+            $(this.childNodes).attr('src','img/Customized/3/'+(this.num+1)+'@2x.png')
+            $(this.parentNode).addClass('cho-active')
+        })
+
+        $('.color-txt').click(function () {
+            $('.color-txt span').removeClass('span-active')
+            $(this).add('span-active')
+        })
+
+        $('.mess-box span').click(function () {
+            $('.cho-mess-box span').removeClass('span-active')
+            $(this).addClass('span-active')
+        })
+    })
+</script>
+</html>

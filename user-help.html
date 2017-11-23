@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-客服</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/user-help.css">
+</head>
+<body>
+<div class="top-box">
+    <p>小雅</p>
+    <a href="javascript:;" class="back-link clear"><img src="img/Customized/1/arrow.png" alt="arrow" class="f-left"></a>
+</div>
+<img src="img/user-help/buy.png" class="buy-img">
+<div class="say-box">
+    <div class="ans-box clear">
+        <div class="clear">
+         <img src="img/user-help/head.png" class="head-img f-left">
+         <img src="img/user-help/txt.png" class="txt-img f-left">
+        </div>
+    </div>
+    <div class="er-g"></div>
+</div>
+<div class="inp-box clear">
+    <img src="img/user-help/say.png" class="inp-img f-left">
+    <div class="input f-left"><input type="text" class="f-left" id="inp"></div>
+    <img src="img/user-help/wx.png" class="inp-img f-left">
+    <img src="img/user-help/plus.png" class="inp-img f-left">
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+    $(function () {
+        var er_key = '787af310c4104a4699112483718107f3';//填写你的 API KEY
+        $("#inp").on("keydown",function (e) {
+            if(e.keyCode==13){
+                var a = $('.er-g'), b = $('#inp'), c = $('#inp').val(),d=$(".say-box");
+                a.before('<div class="clear user-que"><img src="img/user-help/user-head.png" class="head-img f-right"><p class="f-right user-txt">'+ c +'</p></div>');
+                window.scrollTo(0,d.height());
+                b.val('');
+                $.getJSON('http://www.tuling123.com/openapi/api?key=' + er_key + '&info=' + c, function (data) {
+                    a.before('<div class="ans-box clear"><img src="img/user-help/head.png"  class="head-img f-left"><p class="f-right user-txt">'+ data.text +'</p></div>');
+                    window.scrollTo(0,d.height());
+                });
+            }
+        });
+
+//        $('#inp').on('keydown',function (z) {
+//            if(z.keyCode==13){
+//
+////                var oDiv=$(".ans-box").eq(0).clone();
+//                var $img=$('<img/>')
+//                $img.attr('src','img/user-help/user-head.png');
+//                $img.addClass('head-img f-right');
+//
+//                var $p=$('<p>'+$("#inp").val()+'</p>')
+//                $p.addClass('f-right user-txt')
+//
+//                var $div=$('<div></div>');
+//                $div.addClass('clear user-que')
+//                $div.append($img);
+//                $div.append($p);
+//                $('.say-box').append($div);
+////                $('.say-box').append(oDiv);
+//                $("#inp").val('');
+//                });
+//            }
+//        })
+        $('.back-link').click(function () {
+            window. history.back()
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-购物袋</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/buy.css">
+</head>
+<body>
+<!--标题部分-->
+<p class="top-til">购物袋 <span class="change f-right">编辑</span></p>
+<!--标题部分结束-->
+
+<!--中间部分-->
+<div class="content-box">
+    <div class="swiper-container-1 swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide target-1">
+                <span></span>
+                <img src="img/buy/1.png">
+            </div>
+            <div class="swiper-slide target-2">
+                <img src="img/buy/delete.png">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container-2 swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide target-1">
+                <span class="span-active"></span>
+                <img src="img/buy/2.png">
+            </div>
+            <div class="swiper-slide target-2">
+                <img src="img/buy/delete.png">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container-3 swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide target-1">
+                <span></span>
+                <img src="img/buy/2.png">
+            </div>
+            <div class="swiper-slide target-2">
+                <img src="img/buy/delete.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!--中间部分结束-->
+
+<!--结算部分-->
+<div class="buy-over-box clear">
+    <div class="all-chose f-left">
+        <span></span>
+        全选
+    </div>
+    <div class="over-box">
+        <a href="#" class="over-img f-right"><img src="img/buy/balance.png" class="f-right"></a>
+        <p class="over-p f-right">总计 :<span class="over-p-2"></span> <br> <span class="over-p-3 f-left">(1件)顺丰包邮</span></p>
+    </div>
+</div>
+<!--结算部分结束-->
+
+<!--底部导航栏部分-->
+<div class="bottom-box clear">
+    <a href="HomePage.html" class="bot-imgbox-1 f-left cl"><img src="img/HomePage-img/home-.png" class="f-left"></a>
+    <a href="ClassIfication.html" class="bot-imgbox-2 f-left cl"><img src="img/HomePage-img/classify-.png" class="f-left"></a>
+    <a href="Customized.html" class="bot-imgbox-2 f-left cl"><img src="img/HomePage-img/custom-.png" class="f-left"></a>
+    <a href="buy.html" class="bot-imgbox-2 f-left cl"><img src="img/HomePage-img/shopping%20bag.png" class="f-left"></a>
+    <a href="my.html" class="bot-imgbox-3 f-left cl"><img src="img/HomePage-img/my-.png" class="f-left"></a>
+</div>
+<!--底部导航栏部分-->
+
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+
+//    var mySwiper = new Swiper('.content-box .swiper-container', {
+//        slidesPerView: 'auto',
+//        initialSlide :0,
+//        followFinger:false,
+//    });
+    var mySwiper1= new Swiper('.swiper-container-1',{
+        slidesPerView: 'auto',
+        initialSlide :0,
+        followFinger:false,
+    })
+    var mySwiper2= new Swiper('.swiper-container-2',{
+        slidesPerView: 'auto',
+        initialSlide :0,
+        followFinger:false,
+    })
+    var mySwiper3= new Swiper('.swiper-container-3',{
+        slidesPerView: 'auto',
+        initialSlide :0,
+        followFinger:false,
+    })
+
+    $(function () {
+        xxx()
+        $('.target-1 span').click(function () {
+            $(this).toggleClass('span-active')
+            xxx()
+//            console.log($('.target-1 .span-active').length==$('.target-1 span').length)
+            if($('.target-1 .span-active').length==$('.target-1 span').length){
+                $('.all-chose span').addClass('span-active')
+            }else{
+                $('.all-chose span').removeClass('span-active')
+            }
+        })
+        $(".target-2").click(function(){
+            $(this).parent().parent().remove();
+            xxx()
+        });
+        $('.all-chose span').click(function () {
+            $(this).toggleClass('span-active')
+            if($('.all-chose span').hasClass('span-active')){
+                $('.target-1 span').addClass('span-active')
+            }else{
+                $('.target-1 span').removeClass('span-active')
+            }
+            xxx()
+        })
+
+        function xxx() {
+            var x=0
+            for(var z=0;z<$('.target-1 span').length;z++){
+                var howMuch=$('.target-1 span:eq('+z+')').hasClass('span-active')
+                if(howMuch==true){
+                    x++
+                }
+            }
+            $('.over-p-2').html(2379*x)
+            $('.over-p-3').html('('+x+'件)顺丰包邮')
+        }
+
+        $('.change').click(function () {
+            $(".swiper-container").toggleClass('move-active')
+            if($(".swiper-container-1").hasClass('move-active')||$(".swiper-container-2").hasClass('move-active')||$(".swiper-container-3").hasClass('move-active')){
+                mySwiper1.slideNext();
+                mySwiper2.slideNext();
+                mySwiper3.slideNext();
+            }
+            else{
+                mySwiper1.slidePrev();
+                mySwiper2.slidePrev();
+                mySwiper3.slidePrev();
+            }
+        })
+
+        $(".swiper-container").on("touchend",function () {
+            var index=$(".swiper-container").index(this)
+//            $(this).toggleClass(Class('move-active'))
+//            $(this).addClass('move-active')
+            console.log(index)
+            if($(".swiper-container-1").hasClass('move-active')||$(".swiper-container-2").hasClass('move-active')||$(".swiper-container-3").hasClass('move-active')){
+//                mySwiper1.slidePrev();
+//                mySwiper2.slidePrev();
+//                mySwiper3.slidePrev();
+//                $(".swiper-container").removeClass('move-active')
+            }
+        })
+    })
+</script>
+</html>

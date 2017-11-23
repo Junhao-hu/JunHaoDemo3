@@ -1,0 +1,221 @@
+body{
+    background: #fcf5eb;
+}
+/*顶部部分*/
+.top-box{
+    margin-top: 0.3rem;
+    position: relative;
+    margin-bottom: 0.62rem;
+}
+.top-box a{
+    display: inline-block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    left:1.3rem;
+}
+.top-box p{
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+.top-box a img{
+    height: 0.36rem;
+}
+/*顶部部分结束*/
+
+/*主体部分*/
+/*选料定款部分*/
+.like-solid{
+    width: 3rem;
+    margin: 0 auto;
+    border-top:solid 1px #000;
+    position: relative;
+    margin-top: 0.72rem;
+    margin-bottom: 0.92rem;
+}
+.like-til{
+    position: absolute;
+    width: 2.1rem;
+    text-align: center;
+    font-size: 0.34rem;
+    margin: 0 auto;
+    top:-0.2rem;
+    left: 0.48rem;
+    background: #fcf5eb;
+    color: #333;
+}
+
+
+.choise-box{
+    width: 6.2rem;
+    margin: 0 auto;
+}
+.choise-0{
+    width:1.74rem;
+    height: 1.2rem;
+}
+.choise-0 a{
+    display: inline-block;
+    width: 1.74rem;
+    height: 0.75rem;
+}
+.choise-0 a img{
+    width: 100%;
+    height: 100%;
+}
+.cho-a-1{
+    box-shadow: 0 0 8px rgba(111,0,0,.2);
+}
+.cho-a-2{
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+}
+.choise-2{
+    margin-left: 0.5rem;
+}
+.cho-active{
+    border-bottom: solid 1px #a31515;
+}
+
+/*选择项部分*/
+.cho-mess-box{
+    width: 100%;
+    height: 7.7rem;
+    background: url("../img/Customized/3/back.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.cho-mess-til{
+    font-size: 0.3rem;
+    color: #333;
+    margin-top: 0.4rem;
+    margin-bottom: 0.45rem;
+    text-align: center;
+}
+.cho-mess-box span{
+    display: inline-block;
+    color: #666;
+    font-size: 0.28rem;
+    margin-bottom: 0.7rem;
+}
+.span-1{
+    margin-left: 0.8rem;
+}
+.span-2{
+    margin-left: 1.22rem;
+}
+.span-3{
+    margin-right: 0.8rem;
+}
+.span-active{
+    color: #a31515 !important;
+}
+.dashed{
+    width: 100%;
+    height: 1px;
+    margin-bottom: 0.55rem;
+    border-bottom: dashed 1px #c9c2b6;
+}
+/*色系部分*/
+.cho-mess-til2{
+    font-size: 0.3rem;
+    color: #333;
+    margin-top: 0.4rem;
+    margin-bottom: 0.45rem;
+    text-align: center;
+    margin: 0;
+}
+.chose-color{
+    width: 4.65rem;
+    margin: 0 auto;
+
+}
+.chose-color p{
+    margin-top: 0;
+    margin-bottom: 0.27rem;
+}
+.color-til{
+    font-size: 0.28rem;
+    color: #666;
+    margin-top: 0.44rem;
+}
+
+.color-txt a{
+    display: inline-block;
+    height: 0.5rem;
+    font-size: 0.28rem;
+    color: #666;
+    line-height: 0.5rem;
+    text-decoration: none;
+}
+.color-txt a span{
+    display: inline-block;
+    line-height: 0.5rem;
+    float: left;
+}
+.color-txt a img{
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.15rem;
+}
+/*选择项部分结束*/
+
+
+/*效果预览部分*/
+.look-box{
+    width: 3.4rem;
+    margin: 0 auto;
+    margin-top: 0.62rem;
+    position: relative;
+}
+.look-img{
+    margin-top: 0.44rem;
+    position: relative;
+}
+.pel-img{
+    width: 1.65rem;
+    height: 5.2rem;
+    margin-left: 0.95rem;
+}
+.d-img{
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    width: 100%;
+  }
+/*效果预览部分结束*/
+.que-img{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    top: -0.4rem;
+    right: -1.3rem;
+}
+.look-p-box{
+    margin-top: 0.5rem;
+    margin-bottom: 0.44rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #333;
+}
+/*选料定款部分结束*/
+
+
+
+
+/*主体部分结束*/
+
+
+/*底部部分*/
+.bottom-box{
+    width: 100%;
+    height: 2.37rem;
+}
+.bottom-box img{
+    width: 100%;
+    height: 100%;
+}

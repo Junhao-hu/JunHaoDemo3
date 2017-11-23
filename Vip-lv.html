@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-会员等级</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/Vip-lv.css">
+</head>
+<body>
+<!--顶部部分-->
+<div class="up-box clear">
+    <div class="top-box">
+        <p>会员等级</p>
+        <a href="javascript:;" class="back-link clear"><img src="img/Customized/1/arrow.png" alt="arrow" class="f-left"></a>
+    </div>
+    <img src="img/vip-lv/head.png" class="head-img f-left">
+    <p class="head-til f-left">
+        近一年消费金额 <br>
+        <span>￥ 40000</span>
+    </p>
+</div>
+<div class="down-box">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/vip-lv/vip-lv.png"></div>
+            <div class="swiper-slide"><img src="img/vip-lv/vip-lv.png"></div>
+            <div class="swiper-slide"><img src="img/vip-lv/vip-lv.png"></div>
+            <div class="swiper-slide"><img src="img/vip-lv/vip-lv.png"></div>
+        </div>
+    </div>
+    <div class="move-box clear swiper-button-prev">
+        <img src="img/vip-lv/arrow-left.png" class="f-left">
+    </div>
+    <div class="move-box clear swiper-button-next">
+        <img src="img/vip-lv/arrow-right.png" class="f-left">
+    </div>
+</div>
+
+
+<!--顶部部分结束-->
+
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    })
+    $('.back-link').click(function () {
+        window. history.back()
+    })
+</script>
+</html>

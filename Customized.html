@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-定制-首页</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/Customized.css">
+</head>
+<body>
+<!--顶部部分-->
+<div class="top-box">
+    <p>红韵定制</p>
+    <a href="HomePage.html" class="clear"><img src="img/Customized/1/arrow.png" alt="arrow" class="f-left"></a>
+</div>
+<!--顶部部分结束-->
+
+
+<!--主体部分-->
+<div class="how-box">
+    <img src="img/Customized/1/procedure.png" alt="procedure" class="procedure">
+    <a href="#"  class="question clear"> <img src="img/Customized/1/question.png" alt="question" class="f-left"></a>
+</div>
+<div class="like-solid">
+    <div class="like-til">你可能会喜欢</div>
+</div>
+<div class="inf-like">
+    <div class="like-inner clear">
+        <a href="Detailed.html" class="f-left"><img src="img/Customized/1/1.png" alt="1"></a>
+        <a href="Detailed.html" class="f-right"><img src="img/Customized/1/2.png" alt="2"></a>
+        <a href="Detailed.html" class="f-left"><img src="img/Customized/1/1.png" alt="1"></a>
+        <a href="Detailed.html" class="f-right"><img src="img/Customized/1/2.png" alt="2"></a>
+    </div>
+</div>
+<!--主体部分结束-->
+
+
+<!--底部部分-->
+<div class="bottom-box">
+    <a href="Customized-2.html"><img src="img/Customized/1/custom.png" alt="custom"></a>
+</div>
+<!--底部部分结束-->
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+    var isloading = false;
+    function getViewportSize(w){
+        //使用指定的窗口，如果不带参数则使用当前窗口
+        w=w||window;
+        //除了IE8及更早的版本以外，其他浏览器都能用
+        if(w.innerWidth!=null)return{w:w.innerWidth,h:w.innerHeight};
+        //对标准模式下的IE（或任意浏览器）
+        var d=w.document;
+        if(document.compatMode=="CSS1Compat")
+            return{w:d.documentElement.clientWidth,
+                h:d.documentElement.clientHeight};
+        //对怪异模式下的浏览器
+        return{w:d.body.clientWidth,h:d.body.clientHeight};
+    }
+
+    //检测滚动条是否滚动到页面底部
+    function isScrollToPageBottom(){
+        //文档高度
+        var documentHeight=document.documentElement.offsetHeight;
+        var viewPortHeight=getViewportSize().h;
+        var scrollHeight=window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0;
+        return documentHeight-viewPortHeight-scrollHeight<20;
+    }
+
+    //页面滚到底部的时候加载新的图片
+    function watchScroll(){
+        if(!isScrollToPageBottom()){
+            setTimeout(arguments.callee,900);
+            return;
+        }else{
+            getMore();
+        }
+    }
+
+    function getMore(){
+        var oUl=$(".like-inner").clone();
+        $(".inf-like").append(oUl);
+        console.log($(".inf-like"));
+        isScrollToPageBottom();
+        watchScroll();
+    }
+    isScrollToPageBottom();
+    watchScroll();
+</script>
+</html>

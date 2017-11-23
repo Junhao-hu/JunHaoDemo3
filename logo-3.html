@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-注册</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/login-3.css">
+</head>
+<body>
+<div class="all-box">
+    <a href="login-1.html" class="arrow clear"><img src="img/login-2/arrow.png" class="f-left"></a>
+    <a href="login-2.html" class="forfet f-right">登录</a>
+    <p class="login-txt">手机号</p>
+    <div class="input-box">
+        <p>手机号</p>
+        <div class="user-box clear"><input type="text" class="user-num f-left" placeholder="  输入号码" id="user-name"></div>
+        <p>验证码</p>
+        <div class="user-box2 clear"><input type="text" class="user-num f-left" placeholder="  输入验证码" id="password"></div>
+        <div class="ok-box f-right"><img src="img/login-3/ok1.png"></div>
+        <div class="time-box" id="time-box">60s</div>
+        <div class="phone-box">发送验证码</div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+    $(function() {
+        var i=60,timer=null;
+        function countdown() {
+            i--;
+            $('.phone-box').attr('disabled','true')
+            $('.time-box').html(i+'s')
+            if(i<=0){
+                clearInterval(timer)
+                $('.time-box').css('display','none')
+                $('.phone-box').removeAttr('disabled','true')
+                $('.time-box').html('60s')
+                i=60;
+            }
+        }
+
+        $("body").bind("touchmove",function(event){event.preventDefault();});
+        var username=0;
+        var password=0;
+        $('#user-name').bind('input propertychange',function () {
+            username=$('#user-name').val().length;
+            password=$('#password').val().length;
+            if(username==11&&password==4){
+                $('.ok-box img').attr('src','img/login-3/ok2.png')
+//                $('.ok-box img').click(function () {
+//                    window.location.href="password.html"
+//                })
+            }else {
+                clearInterval($("#time-box").timer);
+                i=60;
+                $('.ok-box img').attr('src','img/login-3/ok1.png')
+            }
+
+//            $('.phone-box').click(function () {
+//                $('.time-box').css('display','block')
+//            $('.time-box').timer= setInterval(countdown,1000);
+                //var i=parseInt($('.time-box').html());
+//                function countdown() {
+//                    i--;
+//                    $('.phone-box').attr('disabled','true')
+//                    $('.time-box').html(i+'s')
+//                    if(i==0){
+//                        clearInterval(timer)
+//                        $('.time-box').css('display','none')
+//                        $('.phone-box').removeAttr('disabled','true')
+//                        $('.time-box').html('60s')
+//                    }
+//                }
+//            })
+            if(username!=11){
+                clearInterval(timer)
+                $('.phone-box').css('display','none')
+                $('.time-box').css('display','none')
+                $('.time-box').html('60s')
+                i=60;
+
+            }else {
+                $('.phone-box').css('display','block')
+            }
+        })
+
+    $('.phone-box').click(function () {
+        timer= setInterval(countdown,1000);
+        if(/^1[34578]\d{9}$/.test($('#user-name').val())){
+            $('.time-box').css('display', 'block')
+        }
+        if(!/^1[34578]\d{9}$/.test($('#user-name').val())){
+            $('.phone-box').click(function () {
+                alert('您所输入的手机号有误！')
+            })
+        }
+
+    })
+        $('#password').bind('input propertychange',function () {
+            username=$('#user-name').val().length;
+            password=$('#password').val().length;
+            if(username==11&&password==4){
+                $('.ok-box img').attr('src','img/login-3/ok2.png')
+//                $('.ok-box img').click(function () {
+//                    window.location.href="password.html"
+//                })
+            }else {
+                $('.ok-box img').attr('src','img/login-3/ok1.png')
+            }
+        })
+
+        $('.ok-box img').click(function () {
+            if($('#user-name').val().length!=11||$('#password').val().length!=4) {
+                alert('您所输入的手机号或验证码错误，请核对！')
+            }
+            else {
+                window.location.href="password.html"
+            }
+        })
+    })
+</script>
+</html>

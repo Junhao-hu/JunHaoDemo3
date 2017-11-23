@@ -1,0 +1,74 @@
+body{
+    background: #fcf5eb;
+}/*顶部部分*/
+.top-box{
+    padding-top: 0.3rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.top-box a{
+    display: inline-block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    left:1.3rem;
+}
+.top-box p{
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+.top-box a img{
+    height: 0.36rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+.like-1{
+    display: inline-block;
+    width: 100%;
+    height: 1.99rem;
+    border-bottom: solid 1px #d6d4d1;
+    margin-bottom: 0.2rem;
+}
+.like-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.no-look{
+    margin-top: 1.7rem;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.txt-img-box{
+    width: 1.32rem;
+    height: 6rem;
+    margin: 0 auto;
+}
+.txt-img-box img{
+    width: 100%;
+    height: 100%;
+}
+.found-like{
+    margin-top: 1.7rem;
+    position: relative;
+}
+.found-a{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 3.25rem;
+}
+.del{
+    width: 1.2rem;
+}
+.del img{
+    width: 1.2rem;
+    height: 2rem;
+}

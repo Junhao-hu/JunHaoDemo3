@@ -1,0 +1,143 @@
+body{
+    background: #fcf5eb;
+}
+.top-box{
+    width: 6.1rem;
+    height: 0.36rem;
+    position: absolute;
+    top: 0.65rem;
+    margin: 0 0.7rem;
+    z-index: 99;
+}
+.back-img{
+    width: 0.2rem;
+    height: 0.36rem;
+}
+.back-img img{
+    width: 100%;
+    height: 100%;
+}
+.plus-img{
+    width: 0.36rem;
+    height: 0.36rem;
+}
+.plus-img img{
+    width: 100%;
+    height: 100%;
+}
+.more-box-click{
+    position: absolute;
+    width: 1.9rem;
+    height: 2.6rem;
+    background: url("../img/Customized/4/more2@1x.png")no-repeat;
+    background-size: 100% 100%;
+    z-index: 9;
+    top: 0.25rem;
+    right: 0;
+    display: none;
+}
+.more-box-click a{
+    display: inline-block;
+    width: 1.5rem;
+    height: 0.8rem;
+    position: absolute;
+    top:0.16rem;
+    left: 0.24rem;
+}
+/*banner部分*/
+.banner-box{
+    width: 100%;
+    height: 9.55rem;
+    margin: 0 auto;
+    position: relative;
+}
+.banner-box img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination{
+    left: 3rem !important;
+    bottom: 1.3rem !important;
+}
+.swiper-pagination span{
+    float: left;
+    margin: 0 0.1rem !important;
+}
+/*banner部分结束*/
+.swiper-pagination-bullet-active{
+     opacity: 1;
+     background: #333;
+ }
+
+.img-name-box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.1rem;
+    z-index: 9;
+}
+.img-name-box img{
+    width: 100%;
+    height: 100%;
+}
+.save{
+    width: 100%;
+    position: relative;
+    z-index:1;
+}
+.content-box{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    z-index:0;
+}
+.content-box img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*底部导航栏*/
+.bot-nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+    border-top: solid 1px #d4cec6;
+    margin-top: 1rem;
+    background: #fcf5eb;
+}
+.bot-nav a{
+    display: inline-block;
+}
+.kefu{
+    width: 1rem;
+    height: 100%;
+    margin-left: 0.45rem;
+    margin-right: 0.25rem;
+}
+.kefu img{
+    width: 0.64rem;
+    height: 0.75rem;
+    margin-top: 0.18rem;
+    margin-left: 0.12rem;
+}
+.shopping{
+    width: 1rem;
+    height: 100%;
+}
+.shopping img{
+    width: 0.64rem;
+    height: 0.75rem;
+    margin-top: 0.18rem;
+    margin-left: 0.12rem;
+}
+.to-pay{
+    width: 2.15rem;
+    height: 100%;
+}
+.to-pay img{
+    width: 100%;
+    height: 100%;
+}

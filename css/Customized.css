@@ -1,0 +1,103 @@
+body{
+    background: #fcf5eb;
+}
+/*顶部部分*/
+.top-box{
+    margin-top: 0.3rem;
+    position: relative;
+    margin-bottom: 0.62rem;
+}
+.top-box a{
+    display: inline-block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    left:1.3rem;
+}
+.top-box p{
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+.top-box a img{
+    height: 0.36rem;
+}
+/*顶部部分结束*/
+
+/*主体部分*/
+/*流程图部分*/
+.how-box{
+    width: 5.25rem;
+    height: 8.5rem;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    position: relative;
+}
+.procedure{
+    width: 100%;
+    height: 100%;
+}
+.question{
+    position: absolute;
+    width: 0.34rem;
+    height: 0.34rem;
+    top: 8rem;
+    left: 4.46rem;
+}
+.question img{
+    width: 100%;
+    height: 100%;
+}
+
+.like-solid{
+    width: 4rem;
+    margin: 0 auto;
+    border-top:solid 1px #000;
+    position: relative;
+    margin-top: 0.72rem;
+}
+.like-til{
+    position: absolute;
+    width: 2.1rem;
+    padding: 0 0.35rem;
+    text-align: center;
+    font-size: 0.34rem;
+    margin: 0 auto;
+    top:-0.2rem;
+    left: 0.66rem;
+    background: #fcf5eb;
+    color: #333;
+}
+.like-inner{
+    width: 5.25rem;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+}
+.like-inner a{
+    display: inline-block;
+    width: 2.55rem;
+    height: 4.4rem;
+    margin-bottom: 0.16rem;
+}
+.like-inner a img{
+    width: 100%;
+    height: 100%;
+}
+/*主体部分结束*/
+
+
+/*底部部分*/
+.bottom-box{
+    width: 100%;
+    height: 2.37rem;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+}
+.bottom-box img{
+    width: 100%;
+    height: 100%;
+}

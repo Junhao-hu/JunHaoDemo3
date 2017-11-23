@@ -1,0 +1,100 @@
+body{
+    background: #fcf5eb;
+}/*顶部部分*/
+.top-box{
+    padding-top: 0.3rem;
+    position: relative;
+    margin-bottom: 0.55rem;
+}
+.top-box a{
+    display: inline-block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    left:1.3rem;
+}
+.top-box p{
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+.top-box a img{
+    height: 0.36rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+
+.buy-img{
+    width: 100%;
+    margin-bottom: 0.93rem;
+}
+.head-img{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 0.92rem;
+    height: 0.92rem;
+}
+.txt-img{
+    width: 5.45rem;
+    height: 1.1rem;
+}
+.inp-box{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    border-top: solid 1px #888684;
+    background: #fcf5eb;
+}
+.inp-img{
+    width: 0.56rem;
+    height: 0.56rem;
+    margin-top: 0.21rem;
+    margin-left: 0.13rem;
+}
+
+.input{
+    width: 5.18rem;
+    height: 0.72rem;
+    background: url("../img/user-help/inp.png") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 0.13rem;
+    margin-top: 0.13rem;
+}
+.input input{
+    width: 4.8rem;
+    height: 0.46rem;
+    margin-left: 0.18rem;
+    outline: none;
+    border: none;
+    margin-top: 0.12rem;
+    font-size: 0.36rem;
+}
+
+
+.user-que{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    width: 100%;
+    min-height: 1.1rem;
+}
+.user-txt{
+    display: inline-block;
+    width: 5.05rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.1rem;
+    min-height: 1.1rem;
+    background: #fff;
+    border-radius: 15px;
+    font-size: 0.26rem;
+    margin: 0;
+    word-break:break-word;
+}
+.say-box{
+    margin-bottom: 1.3rem;
+}

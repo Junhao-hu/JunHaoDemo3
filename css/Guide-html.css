@@ -1,0 +1,24 @@
+.all-img{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.guide-img{
+    width: 100%;
+}
+.time-out{
+    width: 1.16rem;
+    height: 0.46rem;
+    position: absolute;
+    top:0.62rem;
+    right:0.14rem;
+    background: url("../img/guide-img/jump.png") no-repeat;
+    background-size: 100% 100%;
+}
+.time-out span{
+    font-size: 0.26rem;
+    color: #a31515;
+    float: right;
+    margin-top: 0.1rem;
+    margin-right: 0.1rem;
+}

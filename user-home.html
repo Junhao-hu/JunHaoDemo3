@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>红韵-个人信息</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/all-use.css">
+    <link rel="stylesheet" href="css/user-home.css">
+</head>
+<body>
+<div class="top-box">
+    <a href="my.html" class="clear"><img src="img/Customized/1/arrow.png" alt="arrow" class="f-left"></a>
+</div>
+<p class="user-mess">个人信息</p>
+<div class="clear" style="margin-bottom: 1.1rem">
+    <img src="img/user-home/head.png" class="head-img f-left">
+    <img src="img/user-home/VIOP@1x.png" class="vip-img f-left">
+</div>
+<div class="more-mess">
+    <p class="mess-1">昵称 <a href="#" class="f-right">十里浅秋 <img src="img/user-home/arrow@1x.png"></a></p>
+    <p class="mess-2">性别 <a href="#" class="f-right">女 <img src="img/user-home/arrow@1x.png"></a></p>
+    <p class="mess-2">生日 <a href="#" class="f-right">1992.11.21 <img src="img/user-home/arrow@1x.png"></a></p>
+    <p class="mess-2">电话 <a href="#" class="f-right">去绑定 <img src="img/user-home/arrow@1x.png"></a></p>
+    <p class="mess-3">收货地址 <a href="#" class="f-right">去绑定 <img src="img/user-home/arrow@1x.png"></a></p>
+</div>
+
+<a href="javascript:;" class="che-box f-right">切换账号<img src="img/user-home/change.png" class="f-right"></a>
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/auto-size.js"></script>
+<script>
+    $(function () {
+        $('.che-box').click(function () {
+            if(confirm("退出当前登陆成功,是否保留账户信息"))
+            {
+                localStorage.clear();
+                alert("退出成功，登陆信息清除\n即将返回登录页面");
+                window.location.href='login-1.html';
+            }
+            else
+            {
+                alert("退出成功，登陆信息保留\n即将返回登录页");
+                window.location.href='login-1.html';
+            }
+        })
+    })
+</script>
+</html>

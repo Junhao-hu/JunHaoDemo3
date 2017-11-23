@@ -1,0 +1,96 @@
+.all-box{
+    width: 100%;
+    height: 13.34rem;
+    background: url("../img/login-1/back.png") no-repeat;
+    background-size: 100% 100%;
+}
+.all-box a{
+    display: inline-block;
+}
+.arrow{
+    width: 0.2rem;
+    height: 0.36rem;
+    margin-top: 0.66rem;
+    margin-left: 0.5rem;
+}
+.arrow img{
+    width: 100%;
+    height: 100%;
+}
+.forfet{
+    font-size: 0.28rem;
+    color: #a31515;
+    margin-top: 0.66rem;
+    margin-right: 0.65rem;
+    text-decoration: none;
+}
+.login-txt{
+    font-size: 0.56rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    color: #a31515;
+    margin-top: 1rem;
+    margin-bottom: 0.95rem;
+}
+.input-box{
+    margin-left: 0.65rem;
+}
+.input-box p{
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+    font-size: 0.32rem;
+    color: #a31515;
+}
+.user-box{
+    width: 6.2rem;
+    height: 0.85rem;
+    border-bottom: solid 1px #e3b6af;
+    margin-bottom: 0.5rem;
+}
+.user-box2{
+    width: 6.2rem;
+    height: 0.85rem;
+    border-bottom: solid 1px #e3b6af;
+    margin-bottom: 0.35rem;
+}
+.user-num{
+    width: 100%;
+    height: 0.64rem;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #a31515;
+}
+.user-num::placeholder{
+    color: #a31515;
+}
+.remenber{
+    display: inline-block;
+    width: 0.22rem;
+    height: 0.22rem;
+    margin-top: 0.06rem;
+}
+.remenber img{
+    width: 100%;
+    height: 100%;
+}
+.rem-active{
+    background: url("../img/login-2/chose.png") no-repeat center;
+    background-size: 0.17rem 0.13rem;
+}
+.look{
+    font-size: 0.28rem;
+    color: #a31515;
+    margin-left: 0.15rem;
+}
+.ok-box{
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-right: 0.5rem;
+}
+.ok-box img{
+    width: 100%;
+    height: 100%;
+}

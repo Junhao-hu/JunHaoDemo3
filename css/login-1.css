@@ -1,0 +1,70 @@
+.all-box{
+    width: 100%;
+    height: 13.34rem;
+    background: url("../img/login-1/back.png") no-repeat;
+    background-size: 100% 100%;
+}
+.all-box a{
+    display: inline-block;
+}
+.arrow{
+    width: 0.2rem;
+    height: 0.36rem;
+    margin-top: 0.66rem;
+    margin-left: 0.5rem;
+}
+.arrow img{
+    width: 100%;
+    height: 100%;
+}
+.wel-box{
+    width: 4.12rem;
+    height: 2.26rem;
+    margin-top: 1.5rem;
+    margin-left: 0.66rem;
+}
+.wel-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.login-1{
+    width: 6.2rem;
+    height: 1rem;
+    margin: 0 auto;
+    margin-top: 1.22rem;
+}
+.login-1 img{
+    width: 100%;
+    height: 100%;
+}
+.login-2{
+    width: 6.2rem;
+    height: 1rem;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+}
+.login-2 img{
+    width: 100%;
+    height: 100%;
+}
+.other-login-box{
+    width: 6.5rem;
+    height: 0.31rem;
+    margin: 0 auto;
+    margin-top: 2.3rem;
+}
+.other-login-box img{
+    width: 100%;
+    height: 100%;
+}
+.other-login{
+    width: 2.33rem;
+    height: 0.75rem;
+    margin: 0 auto;
+    margin-top: 0.52rem;
+}
+.other-login img{
+    width: 0.75rem;
+    height: 0.75rem;
+}
